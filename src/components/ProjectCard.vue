@@ -19,11 +19,14 @@
     <template #header>
       <slot name="header">
         <div class="card-head">
-          <span class="card-icon"><el-icon><FolderOpened /></el-icon></span>
+          <span class="card-icon"><el-icon>
+              <FolderOpened />
+            </el-icon></span>
           <h2 class="card-title">项目作品</h2>
         </div>
       </slot>
     </template>
+
 
     <!-- 项目块：通栏下用栅格两列排布，窄屏（xs）自动单列 -->
     <el-row v-if="projects.length > 0" :gutter="16">
